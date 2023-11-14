@@ -43,7 +43,7 @@ main.sec-bg header.style2 .menu-box-inner nav > div > ul:last-child {margin-righ
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
 .container {padding: 0 15px;max-width: 90%;}
 .jrny-inr,
 .srv-bx2 > h4,
