@@ -121,10 +121,10 @@
                 <div class="container-fluid">
                     <div class="bit-fea-inr">
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 col-lg-5">
+                            <div class="col-md-6 col-sm-12 col-lg-6">
                                 <img class="mockup" src="assets/images/mockup.png" alt="mockup.png">
                             </div>
-                            <div class="col-md-6 col-sm-12 col-lg-7">
+                            <div class="col-md-6 col-sm-12 col-lg-5">
                                 <div class="bit-fea">
                                     <h1 class="text-dark" itemprop="headline">Você está procurando por um investimento
                                         <br>
@@ -150,9 +150,9 @@
                 </div>
             </div>
         </section><!-- Slider Area -->
-        <section id="parceiros">
+        <!-- <section id="parceiros">
             <div class="spacing theme-bg">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="sec-tl2 text-center">
                         <i class="text-white">CONHEÇA NOSSOS</i>
                         <h2 class="no-bf text-white" itemprop="headline">Parceiros</h2>
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="produtos">
             <div class="spacing no-spacing">
                 <div class="srv-wrp3 text-center">
@@ -205,12 +205,13 @@
                 <div class="container-fluid">
                     <div class="btcn-inf-wrp">
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 col-lg-6">
+                            <div class="offset-md-1"></div>
+                            <div class="col-md-6 col-sm-12 col-lg-5">
                                 <div class="inf-mckp">
-                                    <img src="assets/images/resources/inf-mckp.png" alt="inf-mckp.png" itemprop="image">
+                                    <img class="mockup" src="assets/images/resources/inf-mckp.png" alt="inf-mckp.png" itemprop="image">
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 col-lg-6">
+                            <div class="col-md-6 col-sm-12 col-lg-5">
                                 <div class="bnc-desc">
                                     <h2 itemprop="headline">Compra, Venda e Converta seus tokens com segurança</h2>
                                     <p itemprop="description">O livro de ofertas da Coinage oferece transparência total
@@ -228,7 +229,7 @@
         </section>
         <section id="ticker">
             <div class="spacing gray-bg">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="sec-tl2 text-center">
                         <i class="">ATUALIZAÇÃO DOS</i>
                         <h2 class="no-bf" itemprop="headline">ATIVOS</h2>
@@ -240,12 +241,10 @@
                                     <img class="crncy-logo" src="assets/images/currencies/BTC.png" alt="crncy-icn2.png"
                                         itemprop="image">
                                     <span class="mr-3">BTC</span>
-                                    <i class="fa fa-caret-up rd"></i><small class="ml-1 rd">-0,1%</small>
+                                    <i class="fa fa-caret-up rd"></i><small class="ml-1 rd">-2,26%</small>
                                 </div>
                                 <ul class="crncy-lst">
-                                    <li>CNY <span>74,325.39</span><i>Coinmarketcap</i></li>
-                                    <li>CNY <span>74,325.39</span><i>Bitfinex</i></li>
-                                    <li>CNY <span>74,325.39</span><i>Bitflamp</i></li>
+                                    <li><span class="mr-1" id="btc-price">174.951,95</span>CBRL<i>Coinage</i></li>
                                 </ul>
                             </div>
                         </div>
@@ -255,12 +254,10 @@
                                     <img class="crncy-logo" src="assets/images/currencies/ETH.png" alt="crncy-icn2.png"
                                         itemprop="image">
                                     <span class="mr-3">ETH</span>
-                                    <i class="fa fa-caret-up grn"></i><small class="ml-1 grn">1,1%</small>
+                                    <i class="fa fa-caret-up grn"></i><small class="ml-1 rd">-2,71%</small>
                                 </div>
                                 <ul class="crncy-lst">
-                                    <li>CNY <span>74,325.39</span><i>Coinmarketcap</i></li>
-                                    <li>CNY <span>74,325.39</span><i>Bitfinex</i></li>
-                                    <li>CNY <span>74,325.39</span><i>Bitflamp</i></li>
+                                    <li><span class="mr-1" id="eth-price">9.807,24</span>CBRL<i>Coinage</i></li>
                                 </ul>
                             </div>
                         </div>
@@ -273,9 +270,7 @@
                                     <i class="fa fa-caret-up grn"></i><small class="ml-1 grn">5,1%</small>
                                 </div>
                                 <ul class="crncy-lst">
-                                    <li>CNY <span>74,325.39</span><i>Coinmarketcap</i></li>
-                                    <li>CNY <span>74,325.39</span><i>Bitfinex</i></li>
-                                    <li>CNY <span>74,325.39</span><i>Bitflamp</i></li>
+                                    <li><span class="mr-1" id="tcn-price">1,39</span>CBRL<i>Coinage</i></li>
                                 </ul>
                             </div>
                         </div>
@@ -285,7 +280,7 @@
         </section>
         <section>
             <div class="spacing">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="sec-tl2 text-center">
                         <i>VEJA OS PREÇOS</i>
                         <h2 class="no-bf" itemprop="headline">Tabela de preços de Criptomoedas ao vivo</h2>
@@ -294,62 +289,38 @@
                         <table class="table" id="ticker-table">
                             <thead>
                                 <tr>
-                                    <th>Symbol</th>
-                                    <th>Name</th>
-                                    <th>USD</th>
-                                    <th>Change 1h</th>
-                                    <th>Change 24h</th>
-                                    <th>Change 7d</th>
+                                    <th>#</th>
+                                    <th>Nome</th>
+                                    <th>CBRL</th>
+                                    <th>Variação 1h</th>
+                                    <th>Variação 24h</th>
+                                    <th>Variação 7d</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>BTC</td>
+                                    <td><img class="crncy-logo mr-1" src="/assets/images/currencies/BTC.png" alt="BTC">BTC</td>
                                     <td>Bitcoin</td>
-                                    <td>11,583</td>
-                                    <td>-367%</td>
-                                    <td>-18.32%</td>
-                                    <td>-21.56%</td>
+                                    <td>174.951,95</td>
+                                    <td class="text-danger">-0,7%</td>
+                                    <td class="text-danger">-2.26%</td>
+                                    <td class="text-danger">-2.56%</td>
                                 </tr>
                                 <tr>
-                                    <td>ETH</td>
+                                    <td><img class="crncy-logo mr-1" src="/assets/images/currencies/ETH.png" alt="BTC">ETH</td>
                                     <td>Ethereum</td>
-                                    <td>11,583</td>
-                                    <td>-367%</td>
-                                    <td>-18.32%</td>
-                                    <td>-21.56%</td>
+                                    <td>9.807,24</td>
+                                    <td class="text-success">1.7%</td>
+                                    <td class="text-danger">-1.32%</td>
+                                    <td class="text-danger">-1.56%</td>
                                 </tr>
                                 <tr>
-                                    <td>BTC</td>
-                                    <td>Bitcoin</td>
-                                    <td>11,583</td>
-                                    <td>-367%</td>
-                                    <td>-18.32%</td>
-                                    <td>-21.56%</td>
-                                </tr>
-                                <tr>
-                                    <td>BTC</td>
-                                    <td>Bitcoin</td>
-                                    <td>11,583</td>
-                                    <td>-367%</td>
-                                    <td>-18.32%</td>
-                                    <td>-21.56%</td>
-                                </tr>
-                                <tr>
-                                    <td>BTC</td>
-                                    <td>Bitcoin</td>
-                                    <td>11,583</td>
-                                    <td>-367%</td>
-                                    <td>-18.32%</td>
-                                    <td>-21.56%</td>
-                                </tr>
-                                <tr>
-                                    <td>BTC</td>
-                                    <td>Bitcoin</td>
-                                    <td>11,583</td>
-                                    <td>-367%</td>
-                                    <td>-18.32%</td>
-                                    <td>-21.56%</td>
+                                    <td><img class="crncy-logo mr-1" src="/assets/images/currencies/CBRL2.png" alt="TCN">TCN</td>
+                                    <td>Token Coinage</td>
+                                    <td>1,39</td>
+                                    <td class="text-success">0,7%</td>
+                                    <td class="text-success">1.32%</td>
+                                    <td class="text-success">2.56%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -360,7 +331,7 @@
         <section id="ico">
             <div class="spacing ylsh-layer opc7 top-spac70 bottom-spac70">
                 <div class="fixed-bg"></div>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="bnc-wrp">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-lg-6">
@@ -373,7 +344,7 @@
                             <div class="col-md-6 col-sm-12 col-lg-6">
                                 <div class="bnc-inf">
                                     <div class="bnc-tl theme-bg">
-                                        <h4 itemprop="headline">Novo Staking: <span class="text-white">2,1%</span> ao mês</h4>
+                                        <h4 itemprop="headline">Novo Staking: até <span class="text-white">2,1%</span> ao mês</h4>
                                         <span>INICIA EM 16 DE NOVEMBRO/2023, 12:00</span>
                                     </div>
                                     <div class="text-center cntdn">
@@ -418,7 +389,7 @@
         <section id="staking">
             <div class="spacing gray-bg">
                 <!-- <div class="fixed-bg" style="background-image: url(assets/images/ptrn6.jpg);"></div> -->
-                <div class="container-fluid">
+                <div class="container">
                     <div class="sec-tl2 text-center">
                         <i>TOKENS COM</i>
                         <h2 class="no-bf" itemprop="headline">Staking</h2>
@@ -503,19 +474,19 @@
         <section>
             <div class="spacing black-layer2 opc7 top-spac90 bottom-spac70">
                 <div class="gray-bg" ></div>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="fn-fct-wrp styl2 text-center">
                         <div class="remove-ext3">
                             <div class="row">
                                 <div class="col-md-3 col-sm-6 col-lg-3">
                                     <div class="fn-fct-bx styl2">
-                                        <span class="counter">2500</span>
+                                        <span class="counter">2864</span>
                                         <h4 itemprop="headline">Usuários</h4>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-lg-3">
                                     <div class="fn-fct-bx styl2">
-                                        <span class="counter">2500000</span>
+                                        <span class="counter">1953157</span>
                                         <h4 itemprop="headline">Tokens em Staking</h4>
                                     </div>
                                 </div>
@@ -539,7 +510,7 @@
         </section>
         <section>
             <div class="spacing top-spac90 bottom-spac90">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="nws-ltr-wrp">
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-lg-6">
@@ -571,7 +542,7 @@
         </section>
         <footer>
             <div class="spacing drk-bg top-spac80 bottom-spac80">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="ftr-wrp remove-ext5">
                         <div class="row text-center">
                             <div class="col-sm-6 col-md-8">
