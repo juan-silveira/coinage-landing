@@ -292,6 +292,14 @@ blockquote {font-size: 20px;padding: 0 20px 0 40px;}
 }
 
 
-@media (max-width: 320px) {
-
+@media (max-width: 500px) {
+	.cntdn-lst > li:before {
+		font-size: 36px;
+	  }
+	  .cntdn-lst > li span {
+		font-size: 36px;
+	  }
+	  .cntdn-lst > li p {
+		font-size: 12px;
+	  }
 }
